@@ -96,7 +96,40 @@
 # #     print("Conversion failed")
 
 
-######### After creating new branch ##############
+#########------------- After creating new branch ----------------##############
+
+
+####### String Functions ###########
+
+# name = "Uzair Ahmed"
+# print("upper function",name.upper())
+# print("lower function",name.lower())
+# print("replace function",name.replace("Uzair","uzair"))
+# print("title function",name.title())
+# print("capitalize function",name.capitalize())
+# print("find function",name.find("Ahmed"))
+
+
+### let's solve : WAP to check if a number entered by the user is odd or even.
+
+# num = int(input("Enter a number: "))
+
+# if (num % 2 == 0): 
+#     print("The number is even.")
+# else:
+#     print("The number is odd.")
 
 
 
+###
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))  
+num3 = int(input("Enter third number: "))
+
+if (num1 > num2) and (num1 > num3):
+    print("The largest number is first number which is:", num1)
+elif (num2 > num1) and (num2 > num3): 
+    print("The largest number is second number which is:", num2)
+else:
+    print("The largest number is third number which is:", num3)
