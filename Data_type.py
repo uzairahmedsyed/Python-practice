@@ -18,7 +18,7 @@
 # -------------------- TYPE CASTING----------------------
 
 
-# converting string to int and then add 5 to it.
+########### converting string to int and then add 5 to it.  ###########
 
 
 # x = "25"    # direct x = int("25") kar k bhi int type mein convert krskte hain
@@ -31,7 +31,7 @@
 # print(type(add))
 
 
-# converting int to string and then concatenate it the "APPLE".
+############ converting int to string and then concatenate it the "APPLE".  ###########
 
 
 # y = 10
@@ -45,7 +45,7 @@
 
 
 
-# convert float to int 
+############ convert float to int ###########
 
 
 # z = 4.7
@@ -56,7 +56,7 @@
 
 
 
-#  a = True ko integer mein convert karo aur print karo.
+############  a = True ko integer mein convert karo aur print karo. ###########
 
 
 # a = True
@@ -70,7 +70,7 @@
 
 
 
-# Ek variable num = 0 hai. integer se boolean mein convert karo — kya output aayega?
+############ Ek variable num = 0 hai. integer se boolean mein convert karo — kya output aayega? ###########
 
 
 # num = -8.89
@@ -79,7 +79,7 @@
 # print(type(convert_to_boolean))
 
 
-#  try ko convert interger/string to int  (and try with help of try and except )
+############  try to convert interger/string to int  (and try with help of try and except )  ###########
 
 # string_num = "100abc"
 # num = int(string_num)
@@ -94,3 +94,9 @@
 
 # # except ValueError:
 # #     print("Conversion failed")
+
+
+######### After creating new branch ##############
+
+
+
