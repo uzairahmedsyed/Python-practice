@@ -123,13 +123,109 @@
 
 ###
 
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))  
-num3 = int(input("Enter third number: "))
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))  
+# num3 = int(input("Enter third number: "))
 
-if (num1 > num2) and (num1 > num3):
-    print("The largest number is first number which is:", num1)
-elif (num2 > num1) and (num2 > num3): 
-    print("The largest number is second number which is:", num2)
+# if (num1 > num2) and (num1 > num3):
+#     print("The largest number is first number which is:", num1)
+# elif (num2 > num1) and (num2 > num3): 
+#     print("The largest number is second number which is:", num2)
+# else:
+#     print("The largest number is third number which is:", num3);
+
+
+
+
+#####   Q1. User se ek number input lo. Agar number positive hai to print karo "Positive number",agar negative hai to "Negative number",warna "Zero" print karo.  #####
+
+# ask_input = int(input("Enter a number: "))
+# if (ask_input > 0 ):
+#     print("this is a positive number !!!")
+# elif (ask_input < 0 ):
+#     print("this is a negative number !!!")
+# else:
+#     print("It's a zero !!!")
+
+
+
+##### Q2. User se ek letter input lo. Check karo kya wo vowel (a, e, i, o, u) hai ya consonant. Print result accordingly.  ####
+
+
+# ask_input = input("Enter a vowel character: ")
+
+# if  (ask_input == "a") or (ask_input == "A"):
+#     print("its a vowel !!!")
+# elif  (ask_input == "e") or (ask_input == "E"):
+#     print("its a vowel !!!")
+# elif  (ask_input == "i") or (ask_input == "I"):
+#     print("its a vowel !!!")
+# elif  (ask_input == "o") or (ask_input == "O"):
+#     print("its a vowel !!!")
+# elif  (ask_input == "u") or (ask_input == "U"):
+#     print("its a vowel !!!")
+# else:
+#     print("It's a consonant !!!")
+
+## !---CHATGPT LOGIC 
+
+        # ask_input = input("Enter a character: ")
+
+        # if ask_input.lower() in ['a', 'e', 'i', 'o', 'u']:
+        #     print("It's a vowel !!!")
+        # else:
+        #     print("It's a consonant !!!")
+
+
+
+###########  NESTED CONDITIONAL STATEMENT ############
+
+### Q1. Age and Nationality Check
+#### User se age aur nationality input lo.
+#### Agar age >= 18 hai,
+#### to check karo agar nationality == "Pakistani" hai,
+#### to print "Eligible to vote".
+#### Warna "Not eligible (different nationality)".
+###Agar age < 18 hai to print "Not eligible (underage)".
+
+
+ ###--- program for above case
+
+
+# user_age = int(input("Enter your age: "))
+# user_nationality = str.capitalize(input("Enter your nationality: "))
+
+# if user_age >= 18 :
+#     if user_nationality == "Pakistani":
+#         print("Eligible to vote")
+#     else:
+#         print("Not eligible (different nationality)")
+# else:
+#     print("Not eligible (underage)")
+
+
+### -----------------------------------------------########
+
+
+
+### Q2. Login System
+
+### User se username aur password input lo.
+### Agar username "Uzair" hai,
+### to check karo agar password "python123" hai,
+### to print "Login successful".
+### Warna "Wrong password".
+### Agar username galat hai to print "Invalid username".
+
+ ###--- program for above case
+
+user_name = input("Enter your username: ")
+password = input("Enter your password: ")
+
+if user_name.lower() == "uzair": ### user_name input le k "if" k ander .lower k check krwaya
+    if password == "python123":
+        print("Login successful")
+    else:
+        print("Wrong password")
 else:
-    print("The largest number is third number which is:", num3)
+    print("Invalid username")
