@@ -219,13 +219,61 @@
 
  ###--- program for above case
 
-user_name = input("Enter your username: ")
-password = input("Enter your password: ")
+# user_name = input("Enter your username: ")
+# password = input("Enter your password: ")
 
-if user_name.lower() == "uzair": ### user_name input le k "if" k ander .lower k check krwaya
-    if password == "python123":
-        print("Login successful")
-    else:
-        print("Wrong password")
-else:
-    print("Invalid username")
+# if user_name.lower() == "uzair": ### user_name input le k "if" k ander .lower k check krwaya
+#     if password == "python123":
+#         print("Login successful")
+#     else:
+#         print("Wrong password")
+# else:
+#     print("Invalid username")
+
+
+
+
+
+
+
+###########   LIST AND TUPLE (lecture # 3)
+
+
+
+
+
+# movieOne = input("Enter first movie name: ")
+# movieSecond = input("Enter second movie name: ")
+# movieThird = input("Enter third movie name: ")
+
+# listOfMovies = [movieOne ,  movieSecond , movieThird]
+
+# print(listOfMovies)
+# print(type(listOfMovies))
+# print(len(listOfMovies))
+
+
+# copylistOfMovies = listOfMovies.copy()
+
+# print(copylistOfMovies)
+# print(type(copylistOfMovies))
+# print(len(copylistOfMovies))
+
+# listOfMovies.append()
+# print(listOfMovies)
+
+
+
+
+tupleOfgrades = ("c", "d" , "a", "A", "b", "b", "a")
+tupleOfgrades1 = ("b", "d" , "a", "A", "b", "b", "a")
+
+print(tupleOfgrades)
+print(type(tupleOfgrades ))
+
+listOfgrades = [tupleOfgrades, tupleOfgrades1]
+listOfgrades.sort()
+print("after sorting: ", listOfgrades)
+
+resultOfcounting = listOfgrades.count("a")
+print(resultOfcounting)
