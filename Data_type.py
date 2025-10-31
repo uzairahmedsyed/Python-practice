@@ -265,15 +265,84 @@
 
 
 
-tupleOfgrades = ("c", "d" , "a", "A", "b", "b", "a")
-tupleOfgrades1 = ("b", "d" , "a", "A", "b", "b", "a")
+# tupleOfgrades = ("c", "d" , "a", "A", "b", "b", "a")
+# tupleOfgrades1 = ("b", "d" , "a", "A", "b", "b", "a")
 
-print(tupleOfgrades)
-print(type(tupleOfgrades ))
+# print(tupleOfgrades)
+# print(type(tupleOfgrades ))
 
-listOfgrades = [tupleOfgrades, tupleOfgrades1]
-listOfgrades.sort()
-print("after sorting: ", listOfgrades)
+# listOfgrades = [tupleOfgrades, tupleOfgrades1]
+# listOfgrades.sort()
+# print("after sorting: ", listOfgrades)
 
-resultOfcounting = listOfgrades.count("a")
-print(resultOfcounting)
+# resultOfcounting = listOfgrades.count("a")
+# print(resultOfcounting)
+
+
+
+#####################
+
+# userinput = input("enter 5 fruits with comma seperate: ")
+# print(userinput)
+# print(type(userinput))
+# inputsplit = userinput.split(',')
+# print(inputsplit)
+# print(type(inputsplit))
+
+# tupleofinput= tuple(inputsplit)
+# print("tuple: ", tupleofinput )
+# print(type(tupleofinput))
+
+
+
+###### TASK 2
+
+## title : Student Result Checker (Nateeja Jaanchne Wala Program)
+## User Input: Student ka naam aur teen (3) subject ke marks (number) maangain.
+## Variables/List: Naam aur marks ko store karne ke liye variables aur list ka istemaal karen.
+## If-Else:
+## Sab se pehle, total marks aur percentage (feesad) calculate karen.
+## If-Else ki madad se check karen: Agar percentage 70 ya us se zyada hai toh "A Grade" print karen.
+## Agar 50 se 69 ke beech hai toh "B Grade".
+## Agar 40 se 49 ke beech hai toh "C Grade".
+## Agar 40 se kam hai toh "Fail/Improvement needed" print karen.
+
+### code of above proble
+
+# name = input("enter your name: ")
+# marksOne =int(input("enter first subject marks: "))
+# marksSecond = int(input("enter second subject marks: "))
+# marksThird = int(input("enter third subject marks: "))
+# print(type(marksOne))
+# marksList = [ marksOne, marksSecond, marksThird]
+# print("marks list: ", marksList)
+# copyMarksList = marksList.copy()
+# print("copy marks list: ", copyMarksList)
+# copyMarksList.insert(0, name)
+# print("copy marks list after append: ", copyMarksList)
+# totalMarks = marksOne + marksSecond + marksThird
+# percentageOfStd = (totalMarks /  (len(marksList)* 100)) * 100
+# print("total marks: ", totalMarks)
+# print("pencentage: ", percentageOfStd)
+
+# if (percentageOfStd >= 70):
+#         print("grade A ")
+# elif (percentageOfStd >= 50) and (percentageOfStd <= 69):
+#         print("grade B ")
+# elif (percentageOfStd >= 40) and (percentageOfStd <= 49):
+#         print("grade C ")
+# else:
+#         print("Fail/Improvement needed")
+
+
+
+
+
+listOfNumbers = [10,20,30,40,50]
+
+userinput = int(input("Enter a number to check its in my list: "))
+
+if userinput in listOfNumbers:
+        print("its in our list: ", userinput)
+else:
+        print("Not found")
