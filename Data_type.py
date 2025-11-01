@@ -325,6 +325,7 @@
 # print("total marks: ", totalMarks)
 # print("pencentage: ", percentageOfStd)
 
+
 # if (percentageOfStd >= 70):
 #         print("grade A ")
 # elif (percentageOfStd >= 50) and (percentageOfStd <= 69):
@@ -338,11 +339,83 @@
 
 
 
-listOfNumbers = [10,20,30,40,50]
 
-userinput = int(input("Enter a number to check its in my list: "))
 
-if userinput in listOfNumbers:
-        print("its in our list: ", userinput)
+
+
+
+# if userinput in listOfNumbers:
+#         print("its in our list: ", userinput)
+# else:
+#         print("Not found")
+
+
+
+
+# Har item ek tuple hoga: (Product_ID, Product_Name, Quantity, Price)
+inventory = [
+    (101, "Laptop", 5, 120000), # Item 1
+    (102, "Mouse", 50, 800),    # Item 2
+    (103, "Monitor", 15, 25000), # Item 3
+    (104, "Keyboard", 30, 1500) # Item 4
+]
+
+print(type(inventory[1]))
+print(type(inventory))
+userinput = int(input("enter your ID: "))
+
+if (userinput == inventory[0][0]):
+        print(inventory[0])
+elif (userinput == inventory[1][0]):
+        print(inventory[1])
+elif (userinput == inventory[2][0]):
+        print(inventory[2])
+elif (userinput == inventory[3][0]):
+        print(inventory[3])
 else:
-        print("Not found")
+        print("product not found")
+
+mouseInput = int(input("Enter the quantity of mouse you want to buy: "))
+
+
+if (mouseInput <= inventory[1][2]):
+        cost = 0
+        cost = mouseInput * inventory[1][3]
+        print(f"Order confirmed! Total bill is: {cost}")
+else:
+        print(f"Stock limited! Only {inventory[1][2]} units available.")
+
+
+print("Invertory of mouse: ", inventory[1] )
+temp_Invertory = list(inventory[1])
+print("temp list: ", temp_Invertory)
+print(type(temp_Invertory))
+
+final_quantity = inventory[1][2] - mouseInput
+print("final quantity: ", final_quantity)
+print(type(final_quantity))
+
+
+##### HARD TAREEQA HAI
+
+
+###### phele '50' ka index nikala then save in variable
+replaceQuantity = temp_Invertory.index(50)
+##### list k us index per final_quantity update krdi 
+temp_Invertory[replaceQuantity] = final_quantity
+print("after updating the final qunatity: ", temp_Invertory)
+print(type(temp_Invertory))
+##### ALTERNATE WAY (EASIER WAY)
+#####  Simply temp_Invertory k index per final_quantity update krwa deta
+temp_Invertory[2]= final_quantity 
+print("after updating the final qunatity: ", temp_Invertory)
+print(type(temp_Invertory))
+
+
+
+tuple_temp_Invertory = tuple(temp_Invertory)
+print("tuple of temp inventory: ",tuple_temp_Invertory)
+print(type(tuple_temp_Invertory))
+
+inventory[1] = tuple_temp_Invertory
+print("final Invertory: ", inventory)
